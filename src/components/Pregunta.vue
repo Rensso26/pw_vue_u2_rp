@@ -50,7 +50,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 img, .obscuro {
   height: 100vh;
   width: 100vw;
