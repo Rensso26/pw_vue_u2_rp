@@ -7,6 +7,12 @@
 <script>
 import consumirAPIfachada from "../clients/PokemonClient.js";
 export default {
+   beforeUnmount() {
+    console.log("beforeUnmount: justo antes de que el componente se destruya.");
+  },
+  unmounted() {
+    console.log("unmounted: ya fue removido del DOM y destruido.");
+  },
   props: {
     pokemonId: {
       type: Number,
