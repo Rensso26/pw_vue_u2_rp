@@ -40,8 +40,15 @@ const obtenerVectorPokemon = async (vectorNumerico) => {
         id: data4.id,
         name: data4.name
     }
+
+    return [obj1, obj2, obj3, obj4];
 }
 
-export async function consumirAPIfachada(id) {
-    return await consumirAPI(id);
+export async function obtenerVectorPokemonFachada() {
+    const vector = obtenerVectorNumerico();
+    return await obtenerVectorPokemon(vector);
+}
+
+export function obtenerAleatorioFachada(min, max) {
+    return obtenerAleatorio(min, max);
 }
